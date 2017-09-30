@@ -1,0 +1,38 @@
+# Project information
+site_name: Python for Informatics_Geo
+site_description: 
+site_author: Goga Patarkatsishvili 
+
+# Repository
+repo_name: ent1c3d/Python-for-Informatics_Geo
+repo_url: https://ent1c3d.github.io/Python-for-Informatics_Geo/site/
+
+copyright: Copyright &copy; pythongeo
+
+# Pages
+pages:
+    - Home : index.md
+    - თავები:
+        - I თავი : თავები/თავი1.md
+    - About: About.md
+
+# Documentation and theme
+theme: material
+markdown_extensions:
+      - fontawesome_markdown
+      - codehilite
+
+# Options
+extra:
+#logo: 'images/logo.PNG'
+  palette:
+    primary: 'blue grey'
+    accent: 'light blue'
+#  font:
+#    text: 'Roboto'
+#    code: 'Roboto Mono'
+  social:
+    - type: 'github'
+      link: 'https://github.com/ent1c3d'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/in/ent1c3d/'      
