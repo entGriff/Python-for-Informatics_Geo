@@ -6,6 +6,7 @@
 
 
 - [I თავი ](https://ent1c3d.github.io/Python-for-Informatics_Geo/site/%E1%83%97%E1%83%90%E1%83%95%E1%83%94%E1%83%91%E1%83%98/%E1%83%97%E1%83%90%E1%83%95%E1%83%981/)
+- [III თავი ](https://ent1c3d.github.io/Python-for-Informatics_Geo/site/თავები/თავი3/)
 
 რესურსის წყარო :   [http://pythongeo.blogspot.com](http://pythongeo.blogspot.com)
 
