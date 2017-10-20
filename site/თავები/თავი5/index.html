@@ -1,0 +1,793 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="Goga Patarkatsishvili">
+      
+      
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
+    
+    
+      
+        <title>V თავი - Python for Informatics_Geo</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="blue-grey" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../.." title="Python for Informatics_Geo" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  თავები
+                </span>
+              
+            
+            V თავი
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://ent1c3d.github.io/Python-for-Informatics_Geo/site/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ent1c3d/Python-for-Informatics_Geo
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Python for Informatics_Geo
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://ent1c3d.github.io/Python-for-Informatics_Geo/site/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ent1c3d/Python-for-Informatics_Geo
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      თავები
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        თავები
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E1%83%97%E1%83%90%E1%83%95%E1%83%981/" title="I თავი" class="md-nav__link">
+      I თავი
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E1%83%97%E1%83%90%E1%83%95%E1%83%983/" title="III თავი" class="md-nav__link">
+      III თავი
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        V თავი
+      </label>
+    
+    <a href="./" title="V თავი" class="md-nav__link md-nav__link--active">
+      V თავი
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51" title="5.1 ცვლადების განახლება" class="md-nav__link">
+    5.1 ცვლადების განახლება
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-while" title="5.2  while ბრძანება" class="md-nav__link">
+    5.2  while ბრძანება
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53" title="5.3 უსასრულო მარყუჟი" class="md-nav__link">
+    5.3 უსასრულო მარყუჟი
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-break" title="5.4  "უსასრულო მარყუჟები" და break" class="md-nav__link">
+    5.4  "უსასრულო მარყუჟები" და break
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#55-continue-" title="5.5 continue - თი დასრულებული გამეორება" class="md-nav__link">
+    5.5 continue - თი დასრულებული გამეორება
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#56-for-" title="5.6 განსაზღვრული მარყუჟები იყენებს for -ს" class="md-nav__link">
+    5.6 განსაზღვრული მარყუჟები იყენებს for -ს
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#57" title="5.7 მარყუჟის ნიმუშები" class="md-nav__link">
+    5.7 მარყუჟის ნიმუშები
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#571" title="5.7.1 მთვლელი და შემაჯამებელი მარყუჟები" class="md-nav__link">
+    5.7.1 მთვლელი და შემაჯამებელი მარყუჟები
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#572" title="5.7.2 მაქსიმუმი და მინიმუმი მარყუჟები" class="md-nav__link">
+    5.7.2 მაქსიმუმი და მინიმუმი მარყუჟები
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#58" title="5.8 გამართვა" class="md-nav__link">
+    5.8 გამართვა
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#59" title="5.9 ლექსიკონი" class="md-nav__link">
+    5.9 ლექსიკონი
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51" title="5.1 ცვლადების განახლება" class="md-nav__link">
+    5.1 ცვლადების განახლება
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-while" title="5.2  while ბრძანება" class="md-nav__link">
+    5.2  while ბრძანება
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53" title="5.3 უსასრულო მარყუჟი" class="md-nav__link">
+    5.3 უსასრულო მარყუჟი
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-break" title="5.4  "უსასრულო მარყუჟები" და break" class="md-nav__link">
+    5.4  "უსასრულო მარყუჟები" და break
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#55-continue-" title="5.5 continue - თი დასრულებული გამეორება" class="md-nav__link">
+    5.5 continue - თი დასრულებული გამეორება
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#56-for-" title="5.6 განსაზღვრული მარყუჟები იყენებს for -ს" class="md-nav__link">
+    5.6 განსაზღვრული მარყუჟები იყენებს for -ს
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#57" title="5.7 მარყუჟის ნიმუშები" class="md-nav__link">
+    5.7 მარყუჟის ნიმუშები
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#571" title="5.7.1 მთვლელი და შემაჯამებელი მარყუჟები" class="md-nav__link">
+    5.7.1 მთვლელი და შემაჯამებელი მარყუჟები
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#572" title="5.7.2 მაქსიმუმი და მინიმუმი მარყუჟები" class="md-nav__link">
+    5.7.2 მაქსიმუმი და მინიმუმი მარყუჟები
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#58" title="5.8 გამართვა" class="md-nav__link">
+    5.8 გამართვა
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#59" title="5.9 ლექსიკონი" class="md-nav__link">
+    5.9 ლექსიკონი
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>V თავი</h1>
+                
+                <h2 id="51">5.1 ცვლადების განახლება</h2>
+<p>ტოლობის ზოგადი ნიმუშია, როცა გატოლება ცვლადს ანახლებს - სადაც ცვლადის ახალი მნიშვნელობა დამოკიდებულია ძველ მნიშვნელობაზე.</p>
+<div class="codehilite"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+
+
+<p>ეს ნიშნავს "აიღე x - ს მნიშვნელობა დაუმატე ერთი და განაახლე x ახალი მნიშვნელობით."  თუ ცდი რომ განაახლო ისეთი ცვლადი, რომელიც არ არსებობს, მიიღებ შეცდომას, იმიტომ რომ პითონი ითვლის მარჯვენა ნაწილს სანამ x - ს გაუტოლებს.</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s1">&#39;x&#39;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
+</pre></div>
+
+
+<p>ცვლადს ჯერ მნიშვნელობა უნდა მიანიჭო და შემდეგ შეგეძლება განაახლო.</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+
+
+<p>ცვლადის განახლებას ერთის დამატებით ჰქვია "ზრდა" (an increment) და ერთის გამოკლებით - "კლება" (a decrement.)</p>
+<h2 id="52-while">5.2  while ბრძანება</h2>
+<p>კომპიუტერები ხშირად იყენებენ ავტომატურად განმეორებად დავალებებს. იდენტური ან მსგავსი დავალებების გამეორება შეცდომის გარეშე კომპიუტერისთვის ადვილია, ადამიანისთვის კი უხეირო. პითონი უზრუნველყოფილია რამდენიმე ენის მახასიათებლებით, რომ განმეორებები გააკეთოს  ადვილად.
+პითონში გამეორების ერთ - ერთი ფორმაა while ბრძანება. აქაა მარტივი პროგრამა რომელიც უკუღმა თვლის ხუთიდან და ამბობს “Blastoff!”.</p>
+<div class="codehilite"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">print</span> <span class="n">n</span>
+      <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="k">print</span> <span class="s1">&#39;Blastoff!&#39;</span>
+</pre></div>
+
+
+<p>შეგიძლია წაიკითხო while  ბრძანება ინგლისურად.  ეს ნიშნავს;  while(სანამ) n მეტია ნულზე, გამოსახე n - ის მნიშვნელობა და მოაკელი 1. როცა მიიღებ ნულს, while  ბრძანება მორჩება და გამოსახავს სიტყვას 'Blastoff!'.
+უფრო ფორმალურად აქაა განხორცილებათა დინება while ბრძანებისთვის.</p>
+<ol>
+<li>პირობის შეფასება,  True ან False</li>
+<li>პირობა თუ მცდარია (False), მორჩეს  while ბრძანებას და განახორციელოს სხვა ბრძანება.</li>
+<li>პირობა თუ მართალია, შეასრულე  body კოდი და დაუბრუნდი პირველ ნაბიჯს.</li>
+</ol>
+<p>დინები ამ ტიპს ჰქვია მარყუჟი (loop) , იმიტომ რომ მესამე ნაბიჯი ამარყუჟებს. ყოველთვის, როცა ვაკეთებთ მარყუჟს, ამას ვეძახით გამეორებას. ზემო მაგალითზე შეგვიძლია ვთქვათ, რომ იქ იყო 5 გამეორება, რაც ნიშნავს რომ მარყუჟის  სხეული(კოდი) განხორციელდა ხუთჯერ.
+მარყუჟის კოდმა ცვლადის ან ცვლადების მნიშვნელობა უნდა ცვალოს მანამ, სანამ პირობა არ გახდება მცდარი და მარყუჟი დასრულდება. ცვლადს, რომელიც მარყუჟის მიერ ყოველ ჯერზე იცვლება ვეძახით გამეორებად ცვლადს. ასეთი ცვლადი თუ არაა, მარყუჟი განმეორდება უსასრულოდ.</p>
+<h2 id="53">5.3 უსასრულო მარყუჟი</h2>
+<p>პროგრამისტების უსასრულო თავშესაქცევია დაკვირვება შამპუნზე. "ქაფი,გარეცხვა, გამეორება" .ესაა უსასრულო მარყუჟი, იმიტომ რომ არაა გამეორებადი ცვლადი, რომელიც გეტყვის რამდენჯერ განხორციელდება მარყუჟი.
+უკუღმა თვლის შემთხვევაში შეგვიძლია დავამტკიცოთ, რომ მარყუჟი როდესღაც მორჩება - ვიცით რა n - ის მნიშვნელობა, და  ვხედავთ რომ n - ის მნიშვნელობა მარყუჟის ყოველ შესრულებაზე იკლებს. საბოლოოდ ვიღებთ 0.  სხვა შემთხვევებში მარყუჟი უსასრულოა, იმიტომ რომ არა აქვს განმეორებადი ცვლადი.</p>
+<h2 id="54-break">5.4  "უსასრულო მარყუჟები" და break</h2>
+<p>ხანდახან არ იცი როდის დამთავრდება მარყუჟი, სანამ კოდის შუაში არ გახვალ. ამ შემთხვევაში შეგიძლია დაწერო უსასრულო მარყუჟი და გამოიყენო break ბრძანება მარყუჟიდან გამოსასვლელად. ეს მარყუჟი აშკარად უსასრულოა, იმიტომ რომ while ბრძანების ლოგიკური გამოსახულება არის მუდმივად True.</p>
+<div class="codehilite"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="k">print</span> <span class="n">n</span><span class="p">,</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="k">print</span> <span class="s1">&#39;Done!&#39;</span>
+</pre></div>
+
+
+<p>თუ მიქარავ და ამ კოდს გაუშვებ, სწრაფად ისწავლი როგორ გათიშო პითონი ან დენიდან გამორთავ კომპიუტერს. ეს პროგრამა იმუშავებს მუდამ, იმიტომ რომ მარყუჟის ზემოთ ლოგიკური გამოსახულება არის ყოველთვის True და ამ ფაქტის ძალით გამოსახულების მუდმივი მნიშვნელობაა True .
+სანამ ესაა უფუნქციო უსასრულო მარყუჟი, ჩვენ შეგვიძლია ისევ გამოვიყენოთ ნიმუში  სასარგებლო მარყუჟის გასაკეთებლად  და კოდში ფრთხილად დავამატოთ break ბრძანება, რომელიც შესრულდება მაშინ, როცა კი ამის პირობა შესრულდება.</p>
+<div class="codehilite"><pre><span></span><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;&gt; &#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">line</span> <span class="o">==</span> <span class="s1">&#39;done&#39;</span><span class="p">:</span>
+                        <span class="k">break</span>
+            <span class="k">print</span> <span class="n">line</span>
+<span class="k">print</span> <span class="s1">&#39;Done!&#39;</span>
+</pre></div>
+
+
+<p>მარყუჟის პირობაა True, რომელიც ყოველთვის მართალია, ამიტომ კოდი იმუშავებს მანამ, სანამ არ მიაღწევს break ბრძანებას. ყოველ ჯერზე  გამოჩნდება ახალი კუთხური ფრჩხილი და მომხმარებელი როცა დაწერს done - ს, break ბრძანება მარყუჟს გათიშავს. სხვა შემთხვევაში პროგრამა ყოველ ჯერზე  ექოსავით გაიმეორებს მომხმარებლის დაწერილს.აქაა მაგალითი:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;</span> <span class="n">hello</span> <span class="n">there</span>
+<span class="n">hello</span> <span class="n">there</span>
+<span class="o">&gt;</span> <span class="n">finished</span>
+<span class="n">finished</span>
+<span class="o">&gt;</span> <span class="n">done</span>
+<span class="n">Done</span><span class="err">!</span>
+</pre></div>
+
+
+<p>ეს გზა   while  მარყუჟის დასაწერად არის  გავრცელებული, იმიტომ რომ  ყოველთვის შეგიძლია შეამოწმო პირობა, და  შეგიძლია გამოსახო გაჩერების ბრძანება როგორც  დადებითად ("გააჩერე როცა ეს მოხდება") ასევე უარყოფითად ("გააგრძელე სანამ ეს მოხდება")</p>
+<h2 id="55-continue-">5.5 continue - თი დასრულებული გამეორება</h2>
+<p>ხანდახან გინდა, რომ გამეორების მარყუჟი (iteration of a loop) მორჩეს და დაუყოვნებლივ გადახტეს სხვა გამეორებაზე. ამ შემთხვევაში შეგიძლია გამოიყენო continue ბრძანება, რომ გადახტე შემდეგ გამეორებაზე, მიმდინარე გამეორების კოდის შესრულების გარეშე. აქაა მარყუჟის მაგალითი, რომელიც აკოპირებს  input-ს, სანამ მომხმარებელი არ დაწერს "done" - ს, თუმცა ხაზი, რომელიც იწყება დიეზის ნიშნით არ ამობეჭდავს (როგორც პითონის კომენტარებს)</p>
+<div class="codehilite"><pre><span></span><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+      <span class="n">line</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;&gt; &#39;</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">line</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;#&#39;</span> <span class="p">:</span>
+            <span class="k">continue</span>
+      <span class="k">if</span> <span class="n">line</span> <span class="o">==</span> <span class="s1">&#39;done&#39;</span><span class="p">:</span>
+            <span class="k">break</span>
+      <span class="k">print</span> <span class="n">line</span>
+<span class="k">print</span> <span class="s1">&#39;Done!&#39;</span>
+</pre></div>
+
+
+<p>ნიმუში სადაც დამატებულია continue.</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;</span> <span class="n">hello</span> <span class="n">there</span>
+<span class="n">hello</span> <span class="n">there</span>
+<span class="o">&gt;</span> <span class="c1"># don&#39;t print this</span>
+<span class="o">&gt;</span> <span class="k">print</span> <span class="n">this</span><span class="err">!</span>
+<span class="k">print</span> <span class="n">this</span><span class="err">!</span>
+<span class="o">&gt;</span> <span class="n">done</span>
+</pre></div>
+
+
+<p>ყველა ხაზი ამობეჭდილია გარდა იმ ხაზისა, რომელიც დაიწყო დიეზით, იმიტომ რომ, როცა continue ხორციელდება,  ეს ამთავრებს მიმდინარე გამეორებას და ხტება უკან while ბრძანებაზე ახალი გამეორების დასაწყებად. ასე ახტება print ბრძანებას.</p>
+<h2 id="56-for-">5.6 განსაზღვრული მარყუჟები იყენებს for -ს</h2>
+<p>ხანდახან გვინდა გავაკეთოთ მარყუჟი, რათა შევადგინოთ სიტყვების სია ან ხაზები ფაილში ან ციფრების სია. ასეთ დროს შეგვიძლია ავაგოთ განსაზღვრული (definite) მარყუჟი, რომელიც იყენებს for ბრძანებას. while ბრძანებას ვეძახით უსასრულო მარყუჟს, იმიტომ რომ მარტივად ამარყუჟებს, სანამ რამე პირობა არ გახდება False, მაშინ როდესაც for მარყუჟი ამარყუჟებს ნაცნობ ელემენტებს, ასე რომ აკეთებს იმდენ გამეორებას რამდენი ელემენტიცაა მითითებული.
+for მარყუჟის სინტაქსი არის while მარყუჟის მსგავსი.</p>
+<div class="codehilite"><pre><span></span><span class="n">friends</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Joseph&#39;</span><span class="p">,</span> <span class="s1">&#39;Glenn&#39;</span><span class="p">,</span> <span class="s1">&#39;Sally&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">friend</span> <span class="ow">in</span> <span class="n">friends</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s1">&#39;Happy New Year:&#39;</span><span class="p">,</span> <span class="n">friend</span>
+<span class="k">print</span> <span class="s1">&#39;Done!&#39;</span>
+</pre></div>
+
+
+<p>პითონში ცვლადი friends არის სია1 სამი სტრინგის და for მარყუჟი ხორციელდება ყოველი სტრინგისთვის და გამოაქვს შედეგი:</p>
+<div class="codehilite"><pre><span></span><span class="n">Happy</span> <span class="n">New</span> <span class="n">Year</span><span class="p">:</span> <span class="n">Joseph</span>
+<span class="n">Happy</span> <span class="n">New</span> <span class="n">Year</span><span class="p">:</span> <span class="n">Glenn</span>
+<span class="n">Happy</span> <span class="n">New</span> <span class="n">Year</span><span class="p">:</span> <span class="n">Sally</span>
+<span class="n">Done</span><span class="err">!</span>
+</pre></div>
+
+
+<p>for მარყუჟის ინგლისურიდან გადმოთარგმნა არ ხდება ისევე, როგორც while - ის შემთხვევაში, მაგრამ თუ იფიქრებ friends -ზე, როგორც კომპლექტზე, მაშინ გადმოითარგმნება შემდეგნაირად: "კომპლექტში სახელად friends, for მარყუჟის სხეულში თითოეული მეგობრისთვის შეასრულე ბრძანებები”
+პითონში for და in არის განსაზღვრული სიტყვები ხოლო friend და friends - ცვლადები.</p>
+<h2 id="57">5.7 მარყუჟის ნიმუშები</h2>
+<p>როცა გვინდა სიაში ვიპოვნოთ უმცირესი ან უდიდესი ელემენტი, ხშირად ვიყენებთ  for ან while მარყუჟს</p>
+<p>ეს მარყუჟები ჩვეულებრივ აგებულია:
+·         ერთი ან ორი ცვლადის ინიციალიზება სანამ მარყუჟი დაიწყება.
+·         მარყუჟის კოდში გამოთვლების შესრულება თითოეული ელემენტისთვის, ცვლადების სავარაუდო შეცვლა მარყუჟის კოდში.
+·         Looking at the resulting variables when the loop completes.</p>
+<p>გამოვიყენებთ ციფრების სიას მარყუჟის ნიმუშის კონსტრუქციის და კონცეფციის სადემონსტრაციოდ.</p>
+<h2 id="571">5.7.1 მთვლელი და შემაჯამებელი მარყუჟები</h2>
+<p>მაგალითად,  სიაში ელემენტების რაოდენობის დასათვლელად, შეგვეძლო დაგვეწერა მსგავსი for მარყუჟი.</p>
+<div class="codehilite"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">itervar</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span><span class="mi">15</span><span class="p">]:</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">print</span> <span class="s2">&quot;count: &quot;</span><span class="p">,</span> <span class="n">count</span>
+</pre></div>
+
+
+<p>სანამ მარყუჟი დაიწყებოდა, ცვლად count - ს მივანიჭეთ მნიშვნელობა 0, შემდეგ დავწერეთ for მარყუჟი, რომ ემოძრავა ციფრების სიაში. განმეორებად ცვლადს დავარქვით itervar და სანამ მარყუჟში არ ვიყენებთ itervar - ს, არ აკონტროლებს მარყუჟს და ამიტომ მარყუჟის კოდი სიაში ყოველი მნიშვნელობისთვის ხორციელდება ერთხელ. მარყუჟის სხეულში count - ის მნიშვნელობას ვუმატებთ ერთს სიაში თითო მნიშვნელობისთვის. სანამ მარყუჟი ხორციელდება, count - ის მნიშვნელობა არის ციფრი, რომელიც უკვე ვნახეთ. როცა მარყუჟი მორჩება count - ის მნიშვნელობა იქნება ელემენტების რაოდენობის ტოლი. ჩვენ გავაკეთეთ მარყუჟი და როცა მარყუჟში შესრულდება გვქნება ის, რაც გვინდოდა რომ გვქონიყო.</p>
+<p>სხვა მსგავსი მარყუჟი, რომელიც ითვლის სიაში არსებული ციფრების ჯამს:</p>
+<div class="codehilite"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">itervar</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">15</span><span class="p">]:</span>
+            <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">itervar</span>
+<span class="k">print</span> <span class="s1">&#39;Total: &#39;</span><span class="p">,</span> <span class="n">total</span>
+</pre></div>
+
+
+<p>ამ მარყუჟში გამოვიყენეთ განმეორებადი ცვლადი. ნაცვლად იმისა რომ ერთი დაგვემატებინა count - ისთვის - როგორც წინა მარყუჟში. ჩვენ დავუმატეთ არსებული ციფრები (3, 41, 12, და.ა.შ. ) მთელი მარყუჟის განმავლობაში. თუ ფიქრობ ცვლადზე total, ის შეიცავს “running total of the values so far”.ასე რომ სანამ მარყუჟი დაიწყება total  უდრის  ნულს, იმიტომ რომ ჯერ არცერთი მნიშვნელობა არ გვინახავს. მარყუჟის განმავლობაში total არის მიმდინარე მარყუჟის ჯამი და მარყუჟის ბოლოს total  არის საერთო ჯამი სიაში ყველა მნიშვნელობისა.
+როცა კი მარყუჟი განხორციელდება, total  აჯამებს ელემენტებს; ასე გამოყენებულ ცვლადს ხანდახან ეძახიან შემგროვებელს.
+არც დამთვლელი და არც შემაჯამებელი მარყუჟები არა არის განსაკუთრებით სასარგებლო პრაქტიკაში, იმიტომ რომ არის ჩაშენებული ფუნქციები len() და sum(), რომელიც ითვლის ელემენტების რაოდენობას სიაში და ელემენტების ჯამს სიაში.</p>
+<h2 id="572">5.7.2 მაქსიმუმი და მინიმუმი მარყუჟები</h2>
+<p>სიაში ან რიგში უდიდესი მნიშვნელობის საპოვნელად ავაგეთ შემდეგი მარყუჟი:</p>
+<div class="codehilite"><pre><span></span><span class="n">largest</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="k">print</span> <span class="s1">&#39;Before:&#39;</span><span class="p">,</span> <span class="n">largest</span>
+<span class="k">for</span> <span class="n">itervar</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">15</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">largest</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">or</span> <span class="n">itervar</span> <span class="o">&gt;</span> <span class="n">largest</span> <span class="p">:</span>
+                        <span class="n">largest</span> <span class="o">=</span> <span class="n">itervar</span>
+            <span class="k">print</span> <span class="s1">&#39;Loop:&#39;</span><span class="p">,</span> <span class="n">itervar</span><span class="p">,</span> <span class="n">largest</span>
+<span class="k">print</span> <span class="s1">&#39;Largest:&#39;</span><span class="p">,</span> <span class="n">largest</span>
+</pre></div>
+
+
+<p>პროგრამა როცა განხორციელდება ამონაბეჭდი იქნება შემდეგი:</p>
+<div class="codehilite"><pre><span></span><span class="n">Before</span><span class="p">:</span> <span class="bp">None</span>
+<span class="n">Loop</span><span class="p">:</span> <span class="mi">3</span> <span class="mi">3</span>
+<span class="n">Loop</span><span class="p">:</span> <span class="mi">41</span> <span class="mi">41</span>
+<span class="n">Loop</span><span class="p">:</span> <span class="mi">12</span> <span class="mi">41</span>
+<span class="n">Loop</span><span class="p">:</span> <span class="mi">9</span> <span class="mi">41</span>
+<span class="n">Loop</span><span class="p">:</span> <span class="mi">74</span> <span class="mi">74</span>
+<span class="n">Loop</span><span class="p">:</span> <span class="mi">15</span> <span class="mi">74</span>
+<span class="n">Largest</span><span class="p">:</span> <span class="mi">74</span>
+</pre></div>
+
+
+<p>ცვლადი largest  არის საუკეთესო გამოხატულება "უდიდესი მნიშვნელობა რაც აქამდე გვინახავს- ის". მარყუჟამდე largest  მივანიჭეთ მნიშვნელობა None. None არის სპეციალური, მუდმივი მნიშვნელობა, რომელიც შეგვიძლია მივანიჭოთ ცვლადს, ამ ცვლადის - როგორც ცარიელი ცვლადის შესანახად.
+სანამ მარყუჟი დაიწყებოდა უდიდესი მნიშვნელობა იყო None. სანამ მარყუჟი ხორციელდება, largest  თუ არის None , მაშინ ვიღებთ პირველ მნიშვნელობას რომელსაც ვხედავთ როგორც უდიდესს . პირველ გამეორებაში როცა itervar  არის 3,  მაშ შემდეგ largest არის  None , მყისიერად ვანიჭებთ largest - ს მნიშვნელობას 3.
+პირველი გამეორების შემდეგ largest აღარ არის  None,  ლოგიკური გამოსახულების მეორე ნაწილი ამოწმებს itervar &gt; largest და მოქმედებს მაშინ, როცა მნიშვნელობა უფრო დიდია ვიდრე აქამდე გვენახა. როცა ვხედავთ უფრო დიდ მნიშვნელობას, ვიღებთ ახალ მნიშვნელობას ცვლადისთვის largest. პროგრამის ამონაბეჭდში შეგიძლია ნახო largest არის 3 - დან 41 და 74 - მდე.
+მარყუჟის ბოლოში შევამოწმეთ ყველა მნიშვნელობა და ცვლადი largest - ს ენიჭება სიაში უდიდესის მნიშვნელობებად.
+უმცირესი ციფრის გამოსათვლელად კოდი არის თითქმის იგივე:</p>
+<div class="codehilite"><pre><span></span><span class="n">smallest</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="k">print</span> <span class="s1">&#39;Before:&#39;</span><span class="p">,</span> <span class="n">smallest</span>
+<span class="k">for</span> <span class="n">itervar</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">15</span><span class="p">]:</span>
+      <span class="k">if</span> <span class="n">smallest</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">or</span> <span class="n">itervar</span> <span class="o">&lt;</span> <span class="n">smallest</span><span class="p">:</span>
+            <span class="n">smallest</span> <span class="o">=</span> <span class="n">itervar</span>
+      <span class="k">print</span> <span class="s1">&#39;Loop:&#39;</span><span class="p">,</span> <span class="n">itervar</span><span class="p">,</span> <span class="n">smallest</span>
+<span class="k">print</span> <span class="s1">&#39;Smallest:&#39;</span><span class="p">,</span> <span class="n">smallest</span>
+</pre></div>
+
+
+<p>Again, smallest is the “smallest so far” before, during, and after the loop executes.</p>
+<p>როცა მარყუჟი სრულდება, smallest -ს  ენიჭება სიაში უმცირესის მნიშვნელობა.
+როგორც დათვლის და შეჯამების ფუნქციები, ჩაშენებული ფუნქციები max() და min() ამ მარყუჟების დაწერას ხდის ზედმეტს.</p>
+<p>შემდეგი კოდი min() ფუნქციის მარტივი ვერსიაა:</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">min</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
+      <span class="n">smallest</span> <span class="o">=</span> <span class="bp">None</span>
+      <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">smallest</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">or</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="n">smallest</span><span class="p">:</span>
+                  <span class="n">smallest</span> <span class="o">=</span> <span class="n">value</span>
+      <span class="k">return</span> <span class="n">smallest</span>
+</pre></div>
+
+
+<p>ფუნქციურ ვერსიაში print ბრძანებები მოვაშორეთ.</p>
+<h2 id="58">5.8 გამართვა</h2>
+<p>როცა უფრო დიდი პროგრამების წერას დაიწყებ, აღმოაჩენ რომ უფრო მეტ დროს ხარჯავ გამართვაში. მეტი კოდი ნიშნავს შეცდომის დაშვების მეტ შანსს და მეტ ადგილს ნაკლთა დასამალად.
+გამართვის დროის შესამცირებელი ერთი გზაა "გამართვა შუაზე გაყოფით"(?) (“debugging by bisection.”). მაგალითად პროგრამაში 100 ხაზი თუა და შეამოწმებ სათითაოდ, ამას მოუნდება 100 ნაბიჯი. ამის მაგივრად ცადე პრობლემა გაყო შუაზე. მონახე პროგრამის შუა ნაწილი შუალედური მნიშვნელობისათვის, რომლის შემოწმებაც შეგიძლია. დაამატე print ბრძანება (ან სხვა რამე, რასაც დამამოწმებელის ეფექტი ექნება) და პროგრამა გაუშვი. შუა წერტილის შემოწმება თუ შეცდომას აჩვენებს, პრობლემა უნდა იყოს კოდის პირველ ნაწილში და  თუ შემოწმება სწორია , მაშინ - მეორე ნაწილში.
+ყოველ ჯერზე როცა ამოწმებ ამ მეთოდით, ანახევრებ ხაზებს, საცა უნდა მოძებნო პრობლემა. 6 ნაბიჯის შემდეგ(რაც ბევრად ნაკლებია ვიდრე 100)   იქნები 1-2 ხაზით დაბლა თეორიულად მაინც.
+პრაქტიკაში ყოველთვის არ არის ცხადი თუ სადაა "პროგრამის შუა" და შემოწმება ყოველთვის არ არის შესაძლებელი. ხაზების დათვლას და ზუსტად შუა წერტილის პოვნას აზრი არ აქვს. სანაცვლოდ იფიქრე პროგრამაში ადგილებზე, სადაც შეიძლება შეცდომები იყოს და ადგილებზე, სადაც შემოწმება ადვილია.</p>
+<h2 id="59">5.9 ლექსიკონი</h2>
+<p>accumulator: მარყუჟში გამოყენებული ცვლადი, რომელშიც შეიტან ან ჩაუმატებ შედეგს.
+counter: მარყუჟში გამოყენებული ცვლადი ხდომილებათა რაოდენობის დასათვლელად.  მთვლელს ვაყენებთ ნულზე და შემდეგ, როცა გვინდა რამე დათვალოს მთვლელს ყოველ ჯერზე ვზრდით.
+decrement: განახლება, რომელიც ცვლადის მნიშვნელობას ამცირებს.
+initialize: ტოლობა, რომელიც ცვლადს აძლევს საწყის მნიშვნელობას - რომელიც განახლდება.
+increment: განახლება, რომელიც ზრდის ცვლადის მნიშვნელობას (ხშირად ერთით)
+infinite loop: მარყუჟი, რომელშიც შეჩერების პირობა არასდროს შესრულდება.
+iteration: მიცემული ბრძანებების გამეორებადი განხორციელება რეკურსიული ფუნქციის გამოძახებით ან მარყუჟით.</p>
+<p>შენიშვნა: რეკურსიული ფუნქცია ეწოდება ისეთ ფუნქციას რომელიც იძახებს საკუთარ თავს, მისი მთავარი იარაღია ამოცანის მარტივ ნაწილებად დაშლა ანუ დეკომპოზიცია. რეკურსია მოქმედებს პრინციპით “დაყავი და იბატონე”. რეკურსიული ფუნქციის დასრულება ხდება ამოცანის საბაზო ანუ ყველაზე მარტივ დონემდე დაყვანით. ამოცანის რეკურსიულად გადაწყვეტა მოითხოვს გაცილებით დიდ რესურსებს კომპიუტერისგან, ვიდრე ამას საჭიროებს ტრადიციული(იტერაციული) მიდგომა, თუმცა უნდა აღინიშნოს რომ ზოგიერთი ამოცანის გადაწყვეტისას რეკურსიული მიდგომა გაცილებით უკეთესია, ვიდრე იტერაციული.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../%E1%83%97%E1%83%90%E1%83%95%E1%83%983/" title="III თავი" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                III თავი
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../About/" title="About" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                About
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; pythongeo
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/ent1c3d" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://www.linkedin.com/in/ent1c3d/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-6940329b9f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

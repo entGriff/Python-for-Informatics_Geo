@@ -15,6 +15,7 @@ pages:
     - თავები:
         - I თავი : თავები/თავი1.md
         - III თავი : თავები/თავი3.md
+        - V თავი : თავები/თავი5.md
     - About: About.md
 
 # Documentation and theme

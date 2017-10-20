@@ -285,12 +285,38 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#35" title="3.5 მიჯაჭვული კავშირები" class="md-nav__link">
+    3.5 მიჯაჭვული კავშირები
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-nested-conditionals" title="3.6 Nested conditionals" class="md-nav__link">
+    3.6 Nested conditionals
+  </a>
+  
+</li>
+      
       
       
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E1%83%97%E1%83%90%E1%83%95%E1%83%985/" title="V თავი" class="md-nav__link">
+      V თავი
+    </a>
   </li>
 
         
@@ -353,6 +379,20 @@
         <li class="md-nav__item">
   <a href="#34" title="3.4 ალტერნატიული განხორციელება" class="md-nav__link">
     3.4 ალტერნატიული განხორციელება
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35" title="3.5 მიჯაჭვული კავშირები" class="md-nav__link">
+    3.5 მიჯაჭვული კავშირები
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-nested-conditionals" title="3.6 Nested conditionals" class="md-nav__link">
+    3.6 Nested conditionals
   </a>
   
 </li>
@@ -461,6 +501,56 @@
 
 <p>ორზე გაყოფის შემდეგ x - ს ნაშთი თუ ნულია, ესე იგი x არის ლუწი და პროგრამა გამოიტანს შესაბამის მესიჯს. ეს პირობა თუ მცდარია, მაშინ მეორე პირობა განხორციელდება.
 <img alt="ifelse." src="../../images/ifelse.jpg" /></p>
+<h2 id="35">3.5 მიჯაჭვული კავშირები</h2>
+<p>ხანდახან არის ორზე მეტი შესაძლებლობა და გვინდა ორზე მეტი ტოტი(კოდის) . ერთ-ერთი საშუალება გამოთვლის  გამოსახატად არის chained conditional (მიჯაჭვული კავშირი);</p>
+<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span><span class="p">:</span>
+      <span class="k">print</span> <span class="s1">&#39;x is less than y&#39;</span>
+<span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
+      <span class="k">print</span> <span class="s1">&#39;x is greater than y&#39;</span>
+<span class="k">else</span><span class="p">:</span>
+      <span class="k">print</span> <span class="s1">&#39;x and y are equal&#39;</span>
+</pre></div>
+
+
+<p>elif არის “else if.” - ის აბრევიატურა.  კიდევ ერთხელ; ზუსტად ერთი ტოტი განხორციელდება.</p>
+<p><img alt="elif." src="../../images/elif.jpg" /></p>
+<p>elif ცნების რაოდენობაზე ლიმიტი არ არის. თუ არის else პირობა, ის უნდა იყოს კოდის ბოლოში, მაგრამ აქ არცერთის ყოფნაა არაა საჭირო:</p>
+<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span>
+      <span class="k">print</span> <span class="s1">&#39;Bad guess&#39;</span>
+<span class="k">elif</span> <span class="n">choice</span> <span class="o">==</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span>
+      <span class="k">print</span> <span class="s1">&#39;Good guess&#39;</span>
+<span class="k">elif</span> <span class="n">choice</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span>
+      <span class="k">print</span> <span class="s1">&#39;Close, but not correct&#39;</span>
+</pre></div>
+
+
+<p>თითოეული პირობა შემოწმებულია რიგის მიხედვით. პირველი პირობა თუ მცდარია, შემოწმდება მეორე და. ა. შ. რომელიმე თუ მართალია შესაბამისი ტოტი განხორციელდება და ანგარიში მორჩება. თუ ერთზე მეტი პირობაა მართალი, მარტო პირველი მართალი ტოტი განხორციელდება.</p>
+<h2 id="36-nested-conditionals">3.6 Nested conditionals</h2>
+<p>პირობა შეიძლება ჩაბუდებული იყოს სხვა პირობაში. შეგვეძლო დაგვეწერა ასეც:</p>
+<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
+      <span class="k">print</span> <span class="s1">&#39;x and y are equal&#39;</span>
+<span class="k">else</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s1">&#39;x is less than y&#39;</span>
+      <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s1">&#39;x is greater than y&#39;</span>
+</pre></div>
+
+
+<p>ამ კოდს აქვს ორი ტოტი. პირველ ტოტში მარტივი ბრძანებაა , მეორე ტოტი შეიცავს სხვა if  პირობას, რომელსაც თავის მხრივ აქვს ორი ტოტი. ამ ორივე ტოტში მარტივი ბრძანებებია, თუმცა ეს ასევე შეიძლება ყოფილიყო პირობითი ცნებები</p>
+<p><img alt="elif2." src="../../images/elif2.jpg" /></p>
+<p>დაკბილულობა კოდს ხდის ხილვადს. დაბუდებული პირობითი  კავშირები  არის ძნელად წასაკითხი და ზოგადად კარგი იქნება თუ აირიდებ მსგავს კოდს.
+ლოგიკური ოპერატორები ხშირად უზრუნველყოფენ გზას, რომ გაამარტივო ჩაბუდებული კავშირები. მაგალითად, შეგვიძლია გადავწეროთ კოდი ერთი პირობის გამოყენებით:</p>
+<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s1">&#39;x is a positive single-digit number.&#39;</span>
+</pre></div>
+
+
+<p>print ბრძანება განხორციელდება თუ ორივე პირობა შესრულდება. ასეთივე კოდის დაწერა შეგვიძლია and ოპერატორის დახმარებით</p>
+<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="n">x</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+      <span class="k">print</span> <span class="s1">&#39;x is a positive single-digit number.&#39;</span>
+</pre></div>
                 
                   
                 
@@ -494,13 +584,13 @@
           </a>
         
         
-          <a href="../../About/" title="About" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../%E1%83%97%E1%83%90%E1%83%95%E1%83%985/" title="V თავი" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                About
+                V თავი
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
